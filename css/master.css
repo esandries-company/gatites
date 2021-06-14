@@ -7,11 +7,11 @@
 html,
 body {
   font-family: Lato, Montserrat, sans-serif;
+  color: #110133;
 }
 
 /*Acá inicia el nav*/
 nav {
-  background-color: aqua;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -19,22 +19,81 @@ nav {
 }
 
 nav .brand_logo {
+  text-align: center;
+}
+nav .brand_logo img {
   height: 30px;
+}
+@media only screen and (min-width: 768px) {
+  nav .brand_logo img {
+    height: 50px;
+  }
 }
 
 /*Acá inicia el menu de nav*/
 nav ul {
   display: none;
 }
+@media only screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    font: 600 1.875rem/normal Lato;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #110133;
+    opacity: 0.6;
+  }
+  nav ul li a:hover {
+    opacity: 1;
+  }
+}
 
 /*Aca esta el menu*/
+@media only screen and (min-width: 768px) {
+  nav .menu-icon {
+    display: none;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-block-start: 15px;
+  padding-block-end: 15px;
+  min-height: 21px;
+  background-color: #90e5bf;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer .text-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer .text-footer .tagline {
+  display: flex;
+  gap: 4px;
+}
+.footer a {
+  text-decoration: none;
+  font: 400 0.875rem/normal Montserrat;
+  color: #110133;
+  cursor: pointer;
+}
+
 .product_card {
   padding: 20px;
+  height: 345px;
   min-width: 245px;
   max-width: 245px;
   width: 70%;
   background-color: #60bab8;
   border-radius: 10px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .product_card .content {
@@ -61,6 +120,7 @@ nav ul {
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .button.card {
@@ -68,10 +128,58 @@ nav ul {
   border: 4px solid #dff1f1;
   color: #60bab8;
 }
+.button.card:hover {
+  background-color: #d1f5f1;
+  border: 4px solid #d1f5f1;
+}
 
 .button.cardsecondary {
   color: #dff1f1;
   border: 4px solid #dff1f1;
+}
+.button.cardsecondary:hover {
+  background-color: #4eb1ae;
+}
+
+.benefit {
+  padding: 0 20px;
+  max-width: 340px;
+  color: #110133;
+}
+
+.benefit figure {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+
+.benefit h4 {
+  font: 600 1.875rem/normal Lato;
+}
+
+.benefit p {
+  text-align: justify;
+  font: 400 1rem/normal Montserrat;
+}
+
+.recomendation_section--card {
+  max-width: 265px;
+  text-align: center;
+  padding: 10px;
+  border: 4px solid #00918e;
+  border-radius: 7px;
+}
+.recomendation_section--card h5 {
+  font: 600 1.3125rem/normal Lato;
+  text-align: center;
+}
+.recomendation_section--card p {
+  text-align: justify;
+  font: 400 0.875rem/normal Montserrat;
+}
+
+p {
+  font: 400 1rem/normal Montserrat;
 }
 
 /*Acá empieza en main*/
@@ -88,7 +196,7 @@ nav ul {
 }
 @media only screen and (min-width: 768px) {
   .main_section {
-    height: 90vh;
+    height: 85vh;
   }
 }
 
@@ -103,6 +211,7 @@ nav ul {
   display: flex;
   gap: 16px;
   width: 100%;
+  height: 450px;
   padding: 20px auto;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -112,6 +221,59 @@ nav ul {
   .main_section .products {
     justify-content: space-evenly;
   }
+}
+
+/*Acá inicia la section de benefit*/
+.benefits_section {
+  background-color: #d3f5e6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding-block-end: 20px;
+  justify-content: space-around;
+}
+@media only screen and (min-width: 768px) {
+  .benefits_section {
+    height: 90vh;
+  }
+}
+
+/*Recomendation Section*/
+.recomendation_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #90e5bf;
+  gap: 16px;
+  padding-block-start: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .recomendation_section {
+    height: 90vh;
+    align-items: center;
+  }
+}
+
+.faq-section {
+  padding-inline-start: 10%;
+  padding-inline-end: 10%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction: column;
+  gap: 16px;
+}
+.faq-section h5 {
+  font: 600 1.3125rem/normal Lato;
+}
+.faq-section p {
+  font: 400 0.875rem/normal Montserrat;
+}
+
+.footer.nav {
+  background-color: azure;
 }
 
 /*# sourceMappingURL=master.css.map */

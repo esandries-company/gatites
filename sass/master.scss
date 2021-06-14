@@ -3,7 +3,11 @@
 @import "./settings/mixins";
 
 @import "./components/navbar.scss";
+@import "./components/footer.scss";
 @import "./components/product_card.scss";
 @import "./components/button.scss";
+@import "./components/benefit";
+@import "./components/recomendation--card";
 
 @import "./layout/main.scss";
+@import "./layout/faqs.scss";

@@ -1,10 +1,12 @@
 .product_card {
   padding: 20px;
+  height: 345px;
   min-width: 245px;
   max-width: 245px;
   width: 70%;
   background-color: $color2l1;
   border-radius: 10px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .product_card .content {

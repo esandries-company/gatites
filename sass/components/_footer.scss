@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-block-start: 15px;
+  padding-block-end: 15px;
+  min-height: 21px;
+  background-color: #90e5bf;
+  flex-wrap: wrap;
+  gap: 10px;
+  .text-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .tagline {
+      display: flex;
+      gap: 4px;
+    }
+  }
+  & a {
+    text-decoration: none;
+    font: $body2;
+    color: $color1;
+    cursor: pointer;
+  }
+}

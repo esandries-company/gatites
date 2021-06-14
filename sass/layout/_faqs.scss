@@ -1,0 +1,20 @@
+.faq-section {
+  padding-inline-start: 10%;
+  padding-inline-end: 10%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction: column;
+  gap: 16px;
+  h5 {
+    font: $headline5;
+  }
+  p {
+    font: $body2;
+  }
+}
+
+.footer.nav {
+  background-color: azure;
+}
