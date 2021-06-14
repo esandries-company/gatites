@@ -1,0 +1,20 @@
+/*Acá inicia el nav*/
+nav {
+  background-color: aqua;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .brand_logo {
+  height: 30px;
+}
+
+/*Acá inicia el menu de nav*/
+nav ul {
+  display: none;
+}
+/*Aca esta el menu*/
+nav .menu-icon {
+}

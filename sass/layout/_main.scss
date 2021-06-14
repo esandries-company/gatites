@@ -1,0 +1,17 @@
+/*Acá empieza en main*/
+.main_section {
+  padding: 20px;
+}
+.main_section h1 {
+  font: $headline4;
+  text-align: center;
+}
+/*main products*/
+.main_section .products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  padding-block-start: 28px;
+}

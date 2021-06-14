@@ -1,0 +1,9 @@
+@import "./settings/html-body.scss";
+@import "./settings/variables.scss";
+@import "./settings/mixins";
+
+@import "./components/navbar.scss";
+@import "./components/product_card.scss";
+@import "./components/button.scss";
+
+@import "./layout/main.scss";
