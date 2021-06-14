@@ -17,8 +17,7 @@ nav .brand_logo {
 }
 
 /*Acá inicia el menu de nav*/
-nav ul {
-  display: none;
+.nav_options ul {
   @include response-to(768px) {
     display: flex;
     list-style: none;
@@ -38,5 +37,33 @@ nav ul {
 nav .menu-icon {
   @include response-to(768px) {
     display: none;
+  }
+}
+.uno {
+  clip-path: circle(0% at 100% 0);
+}
+
+.dos {
+  clip-path: none;
+}
+
+@include responsemax-to(475px) {
+  .nav_options ul {
+    display: flex;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    flex-direction: column;
+    background-color: white;
+    transition: all 1s ease;
+    list-style: none;
+    gap: 16px;
+    font: $headline5;
+    padding: 0 20px;
+    li a {
+      text-decoration: none;
+      color: $color1suave;
+      opacity: 1;
+    }
   }
 }

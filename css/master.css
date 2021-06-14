@@ -31,22 +31,19 @@ nav .brand_logo img {
 }
 
 /*Acá inicia el menu de nav*/
-nav ul {
-  display: none;
-}
 @media only screen and (min-width: 768px) {
-  nav ul {
+  .nav_options ul {
     display: flex;
     list-style: none;
     gap: 16px;
     font: 600 1.875rem/normal Lato;
   }
-  nav ul li a {
+  .nav_options ul li a {
     text-decoration: none;
     color: #110133;
     opacity: 0.6;
   }
-  nav ul li a:hover {
+  .nav_options ul li a:hover {
     opacity: 1;
   }
 }
@@ -58,6 +55,34 @@ nav ul {
   }
 }
 
+.uno {
+  clip-path: circle(0% at 100% 0);
+}
+
+.dos {
+  clip-path: none;
+}
+
+@media only screen and (max-width: 475px) {
+  .nav_options ul {
+    display: flex;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    flex-direction: column;
+    background-color: white;
+    transition: all 1s ease;
+    list-style: none;
+    gap: 16px;
+    font: 600 1.3125rem/normal Lato;
+    padding: 0 20px;
+  }
+  .nav_options ul li a {
+    text-decoration: none;
+    color: #110133;
+    opacity: 1;
+  }
+}
 .footer {
   display: flex;
   align-items: center;
