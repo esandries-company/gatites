@@ -1,0 +1,18 @@
+.button {
+  padding: 8px 20px;
+  font: $button;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.button.card {
+  background-color: $color2li2;
+  border: 4px solid $color2li2;
+  color: $color2l1;
+}
+.button.cardsecondary {
+  color: $color2li2;
+  border: 4px solid $color2li2;
+}

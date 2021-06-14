@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin response-to($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}

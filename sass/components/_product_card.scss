@@ -1,7 +1,9 @@
 .product_card {
   padding: 20px;
-  width: 245px;
-  background-color: $color2;
+  min-width: 245px;
+  max-width: 245px;
+  width: 70%;
+  background-color: $color2l1;
   border-radius: 10px;
 }
 
