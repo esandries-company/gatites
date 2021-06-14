@@ -256,9 +256,9 @@ p {
 }
 
 .faq-section {
-  padding-inline-start: 10%;
-  padding-inline-end: 10%;
-  height: 80vh;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  padding-block-end: 20px;
   display: flex;
   justify-content: center;
   align-content: space-around;
@@ -270,6 +270,13 @@ p {
 }
 .faq-section p {
   font: 400 0.875rem/normal Montserrat;
+}
+@media only screen and (min-width: 768px) {
+  .faq-section {
+    height: 76.6vh;
+    padding-inline-start: 20%;
+    padding-inline-end: 20%;
+  }
 }
 
 .footer.nav {
