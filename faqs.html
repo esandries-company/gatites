@@ -26,17 +26,22 @@
   </head>
   <body>
     <!--$Here start a navbar -->
-    <nav class="nav-faq">
+    <nav>
       <a class="brand_logo" href="./index.html">
         <img src="./assets/logo-gatites.svg" alt=""
       /></a>
-      <div class="nav_options">
+      <div class="nav_options" id="nav_options">
         <ul>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./faqs.html">FAQ</a></li>
           <li><a href="#">Producto y descripción</a></li>
+
+          <button class="button-close">+</button>
         </ul>
       </div>
-      <img class="menu-icon" src="./assets/menu-icon.svg" alt="" />
+      <button class="button-menu">
+        <img class="menu-icon" src="./assets/menu-icon.svg" alt="" />
+      </button>
     </nav>
     <!--Here end a navbar-->
     <div class="faq-section">
@@ -94,5 +99,7 @@
       </div>
       <a href="mailto:hola@esandries.com">Hola@esandries.com</a>
     </footer>
+
+    <script src="./master.js"></script>
   </body>
 </html>
