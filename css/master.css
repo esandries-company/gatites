@@ -10,6 +10,65 @@ body {
   color: #110133;
 }
 
+.fadeIn {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeINDown {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 /*Acá inicia el nav*/
 nav {
   padding: 10px 20px;
@@ -196,6 +255,25 @@ nav .brand_logo img {
   background-color: #4eb1ae;
 }
 
+.button-product {
+  background: #00918e;
+  /* Color 2 */
+  display: block;
+  padding: 6px 24px;
+  border: 4px solid #00918e;
+  border-radius: 4px;
+  text-align: center;
+  max-width: 200px;
+  text-decoration: none;
+  color: white;
+  font: 600 1.2rem/normal Montserrat;
+}
+
+.button-product.secondary {
+  background-color: transparent;
+  color: #00918e;
+}
+
 .benefit {
   padding: 0 20px;
   max-width: 340px;
@@ -336,6 +414,81 @@ p {
 
 .footer.nav {
   background-color: azure;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 10px auto;
+  text-align: justify;
+  height: 90vh;
+}
+.container h4 {
+  font: 600 1.875rem/normal Lato;
+}
+.container p {
+  font: 400 0.875rem/normal Montserrat;
+}
+
+/*Supser pack*/
+.product_photo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  text-align: center;
+}
+
+.product--description {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/*Starter pack*/
+.product_photo2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  width: 100%;
+  text-align: center;
+}
+
+.product--description2 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/*GAtitos pack*/
+.product_photo3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 100%;
+  text-align: center;
+}
+
+.product--description3 {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0 20px;
+    gap: 24px;
+  }
 }
 
 /*# sourceMappingURL=master.css.map */

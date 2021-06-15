@@ -1,6 +1,7 @@
 @import "./settings/html-body.scss";
 @import "./settings/variables.scss";
 @import "./settings/mixins";
+@import "./settings/animations";
 
 @import "./components/navbar.scss";
 @import "./components/footer.scss";
@@ -11,3 +12,4 @@
 
 @import "./layout/main.scss";
 @import "./layout/faqs.scss";
+@import "./layout/producto.scss";
