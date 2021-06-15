@@ -31,6 +31,9 @@ nav .brand_logo img {
 }
 
 /*Acá inicia el menu de nav*/
+.nav_options ul {
+  display: none;
+}
 @media only screen and (min-width: 768px) {
   .nav_options ul {
     display: flex;
@@ -50,39 +53,63 @@ nav .brand_logo img {
 
 /*Aca esta el menu*/
 @media only screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+}
+.button-menu {
+  background: none;
+  border: none;
+}
+
+.button-close {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
   nav .menu-icon {
     display: none;
   }
 }
 
-.uno {
-  clip-path: circle(0% at 100% 0);
+.nav_options--show ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: white;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.nav_options--show ul > li a {
+  font: 600 1.3125rem/normal Lato;
+  text-decoration: none;
+  color: #110133;
 }
 
-.dos {
-  clip-path: none;
+.button-close-show {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 60px;
+  padding-right: 30px;
+  background: none;
+  border: none;
+  transform: rotate(45deg);
+  color: #110133;
 }
 
-@media only screen and (max-width: 475px) {
-  .nav_options ul {
-    display: flex;
-    position: fixed;
-    right: 0;
-    height: 100vh;
-    flex-direction: column;
-    background-color: white;
-    transition: all 1s ease;
-    list-style: none;
-    gap: 16px;
-    font: 600 1.3125rem/normal Lato;
-    padding: 0 20px;
-  }
-  .nav_options ul li a {
-    text-decoration: none;
-    color: #110133;
-    opacity: 1;
-  }
-}
 .footer {
   display: flex;
   align-items: center;

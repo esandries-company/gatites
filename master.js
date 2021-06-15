@@ -1,14 +1,14 @@
-let boton = document.getElementById("menu-icon");
-let enlaces = document.getElementById("nav_options");
-let contador = 0;
 
-boton.addEventListener("click", function(){
-    if (contador == 0){
-        enlaces.className = ('nav_options dos')
-        contador=1;
-    } else {
-        enlaces.classList.remove('dos');
-        enlaces.className = ('nav_options uno');
-        contador=0;
-    }
-})
+let closeButton = document.querySelector('.button-close');
+let menuButton = document.querySelector('.button-menu');
+let navOptions = document.querySelector('.nav_options');
+
+closeButton.addEventListener('click', togglenavOptions);
+
+menuButton.addEventListener('click', togglenavOptions);
+
+function togglenavOptions(){
+    navOptions.classList.toggle('nav_options--show');
+    closeButton.classList.toggle('button-close-show')
+}
+

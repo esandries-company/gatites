@@ -18,6 +18,7 @@ nav .brand_logo {
 
 /*Acá inicia el menu de nav*/
 .nav_options ul {
+  display: none;
   @include response-to(768px) {
     display: flex;
     list-style: none;
@@ -33,37 +34,64 @@ nav .brand_logo {
     }
   }
 }
+
 /*Aca esta el menu*/
+@include response-to(768px) {
+  .button-menu {
+    display: none;
+  }
+}
+
+.button-menu {
+  background: none;
+  border: none;
+}
+
+.button-close {
+  display: none;
+}
+
 nav .menu-icon {
   @include response-to(768px) {
     display: none;
   }
 }
-.uno {
-  clip-path: circle(0% at 100% 0);
-}
-
-.dos {
-  clip-path: none;
-}
-
-@include responsemax-to(475px) {
-  .nav_options ul {
-    display: flex;
+.nav_options--show {
+  ul {
     position: fixed;
+    top: 0;
     right: 0;
-    height: 100vh;
+    left: 0;
+    bottom: 0;
+    display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 25px;
     background-color: white;
-    transition: all 1s ease;
-    list-style: none;
-    gap: 16px;
-    font: $headline5;
-    padding: 0 20px;
-    li a {
-      text-decoration: none;
-      color: $color1suave;
-      opacity: 1;
-    }
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
   }
+  ul > li a {
+    font: $headline5;
+    text-decoration: none;
+    color: $color1suave;
+  }
+}
+
+.button-close-show {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 60px;
+  padding-right: 30px;
+  background: none;
+  border: none;
+  transform: rotate(45deg);
+  color: $color1suave;
 }
