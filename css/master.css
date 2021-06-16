@@ -272,6 +272,20 @@ nav .brand_logo img {
   font: 600 1.2rem/normal Montserrat;
 }
 
+.button-product--form {
+  margin-top: 10px;
+  width: 90%;
+  background: #00918e;
+  /* Color 2 */
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font: 600 1.2rem/normal Montserrat;
+  border: none;
+  border: 4px solid #00918e;
+}
+
 .button-product.secondary {
   background-color: transparent;
   color: #00918e;
@@ -492,6 +506,92 @@ p {
     padding: 0 20px;
     gap: 24px;
   }
+}
+.body-comprar {
+  height: 80vh;
+}
+@media only screen and (max-width: 768px) {
+  .body-comprar {
+    height: auto;
+  }
+}
+
+.buy--section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  align-content: center;
+  height: 100%;
+}
+
+/*Select the product*/
+.buy--section__product {
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 7px;
+}
+.buy--section__product .section--procut__Image {
+  width: 100%;
+  height: 150px;
+}
+.buy--section__product select {
+  background: none;
+  width: 100%;
+  font: 600 1.3125rem/normal Lato;
+  color: #110133;
+  border-radius: 7px;
+  border: 2px solid #110133;
+  margin: 8px 0;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.starter-pack {
+  background-image: url(../../images/image-starter-pack.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.super-pack {
+  background-image: url(../../images/image-super-pack.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/*Form to buy*/
+.buy--section__form {
+  width: 90%;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.buy--section__form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.buy--section__form form label {
+  font: 600 1.3125rem/normal Lato;
+  color: #00918e;
+}
+.buy--section__form form .data {
+  width: 90%;
+  height: 2rem;
+  padding-left: 20px;
+  border: 1px solid #110133;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+.buy--section__form form .data::placeholder {
+  font: 400 0.875rem/normal Montserrat;
+  color: #110133;
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=master.css.map */

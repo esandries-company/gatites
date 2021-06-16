@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="body-comprar">
     <!--$Here start a navbar -->
     <nav class="fadeINDown">
       <a class="brand_logo" href="./index.html">
@@ -32,9 +32,8 @@
       /></a>
       <div class="nav_options" id="nav_options">
         <ul>
-          <li><a href="./index.html">Inicio</a></li>
           <li><a href="./faqs.html">FAQ</a></li>
-          <li><a href="#">Producto y descripción</a></li>
+          <li><a href="./producto.html">Producto y descripción</a></li>
 
           <button class="button-close">+</button>
         </ul>
@@ -44,45 +43,44 @@
       </button>
     </nav>
     <!--Here end a navbar-->
-    <div class="container">
-      <div class="product_photo">
-        <img src="./images/image-super-pack.png" alt="" />
-      </div>
-      <div class="product--description">
-        <h4>Super Pack</h4>
-        <p>
-          Llevate 3 gatitos por el precio de 2. Con los 3 gatitos podras estar
-          siempre con alguien. Podras ver pelis, programar o jugar videojuegos
-          con la compañia de los 3 super gatitos.
+    <div class="buy--section">
+      <div class="buy--section__product">
+        <div class="section--procut__Image starter-pack"></div>
+        <select class="select-product" name="os0" id="product-selected">
+          <option value="StarterPack">Starter Pack</option>
+          <option value="SuperPack">Super Pack</option>
+        </select>
+        <p class="parrafo-description">
+          Miles de productos en el mercado pero nada como una caja con un gatito
         </p>
-        <a href="./comprar.html" class="button-product">Lo quiero</a>
       </div>
-      <div class="product_photo2">
-        <img src="./images/image-starter-pack.png" alt="" />
-      </div>
-      <div class="product--description2">
-        <h4>Starter Pack</h4>
-        <p>
-          Este Pack es muy especial ya que podras probar lo maravilloso e
-          increíble que es tener una cajita con gatito.
-        </p>
-        <a href="./comprar.html" class="button-product secondary">Lo quiero</a>
-      </div>
-      <div class="product_photo3">
-        <img src="./images/gatitos-asustado.png" alt="" />
-      </div>
-      <div class="product--description3">
-        <h4>¿Gatitos?</h4>
-        <p>
-          Todos los gatitos de nuestras cajas fuerno rescatados del maltrato.
-          Ahora se cuidan, aman y proteguen. Si conozces a alguien que maltrate
-          de su gatito llamanos al: +506 MIAU MIAU y le ofreceremos ayuda de
-          inmediado. Puedes ayudarno con donaciones o por la compra del Super
-          Pack o el Starter Pack
-        </p>
+      <div class="buy--section__form">
+        <form action="">
+          <label for="name">Nombre</label>
+          <input type="text" placeholder="Tu nombre" name="name" class="data" />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            placeholder="Tu correo"
+            name="email"
+            class="data"
+          />
+          <label for="phone">Télefono</label>
+          <input
+            type="numeber"
+            placeholder="Tu télefono"
+            name="phone"
+            class="data"
+          />
+          <input
+            type="submit"
+            class="button-product--form"
+            value="Confirmar pago"
+          />
+        </form>
       </div>
     </div>
-    <!--Here star the footer-->
+
     <footer class="footer">
       <img src="./assets/logo-esandries.svg" alt="" />
       <div class="text-footer">
